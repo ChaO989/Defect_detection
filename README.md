@@ -16,12 +16,16 @@
   ├── backbone: 特征提取网络，可以根据自己的要求选择
   ├── network_files: Faster R-CNN网络（包括Fast R-CNN以及RPN等模块）
   ├── train_utils: 训练验证相关模块（包括cocotools）
+  ├── augmentation: 数据增广
   ├── my_dataset.py: 自定义dataset用于读取VOC数据集
   ├── train_mobilenet.py: 以MobileNetV2做为backbone进行训练
+  ├── change_backbone_with_fpn: 以EfficientnetV2作为backbone进行训练
   ├── train_resnet50_fpn.py: 以resnet50+FPN做为backbone进行训练
   ├── train_multi_GPU.py: 针对使用多GPU的用户使用
   ├── predict.py: 简易的预测脚本，使用训练好的权重进行预测测试
   ├── validation.py: 利用训练好的权重验证/测试数据的COCO指标，并生成record_mAP.txt文件
+  ├── visualize: 训练结果可视化
+  ├── voc_annotation: 数据集划分
   └── pascal_voc_classes.json: pascal_voc标签文件
 ```
 
@@ -54,11 +58,6 @@
 * 在使用预测脚本时，要将`train_weights`设置为你自己生成的权重路径。
 * 使用validation文件时，注意确保你的验证集或者测试集中必须包含每个类别的目标，并且使用时只需要修改`--num-classes`、`--data-path`和`--weights-path`即可，其他代码尽量不要改动
 
-## 如果对Faster RCNN原理不是很理解可参考我的bilibili
-* https://b23.tv/sXcBSP
-
-## 进一步了解该项目，以及对Faster RCNN代码的分析可参考我的bilibili
-* https://b23.tv/HvMiDy
 
 ## Faster RCNN框架图
 ![Faster R-CNN](https://github.com/ChaO989/Defect_detection/blob/main/Faster%20rcnn.png) 
