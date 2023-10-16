@@ -61,4 +61,4 @@
 * https://b23.tv/HvMiDy
 
 ## Faster RCNN框架图
-https://github.com/ChaO989/Defect_detection/blob/main/Faster%20rcnn.png
+![Faster R-CNN](https://github.com/ChaO989/Defect_detection/blob/main/Faster%20rcnn.png) 
