@@ -31,7 +31,7 @@
 
 ## 预训练权重下载地址（下载后放入backbone文件夹中）：
 * MobileNetV2 backbone: https://download.pytorch.org/models/mobilenet_v2-b0353104.pth
-* ResNet50+FPN backbone: https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth
+* ResNet50+FPN backbone: https://download.pytorch.    org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth
 * 注意，下载的预训练权重记得要重命名，比如在train_resnet50_fpn.py中读取的是`fasterrcnn_resnet50_fpn_coco.pth`文件，
   不是`fasterrcnn_resnet50_fpn_coco-258fb6c6.pth`
  
